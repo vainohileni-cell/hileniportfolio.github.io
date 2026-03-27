@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaino Hileni | Portfolio</title>
+  <style>
+    /* Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #7c9dd2; color: #111; line-height: 1.6; }
+
+    /* Landing Page */
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #7c9dd2;
+      color: #000000;
+      text-align: center;
+    }
+    .hero-content { display: flex; flex-direction: column; align-items: center; }
+    
+    /* Profile Picture - 320px (2x bigger) */
+    .profile-pic {
+      width: 320px; 
+      height: 320px; 
+      border-radius: 50%;
+      object-fit: cover; 
+      border: 4px solid #070606; 
+      margin-bottom: 25px;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+    }
+    
+    header h1 { font-size: 3.5rem; letter-spacing: 10px; font-weight: 900; text-transform: uppercase; }
+    .hero-title { font-size: 1.1rem; letter-spacing: 5px; color: #000000; text-transform: uppercase; margin-top: 10px; }
+
+    /* General Section Styling */
+    section { padding: 80px 10%; }
+    h2 { font-size: 2rem; margin-bottom: 30px; letter-spacing: 2px; text-transform: uppercase; }
+
+    /* About Me Section */
+    .about-section { background-color: #f4d68c; display: flex; justify-content: center; }
+    .about-container {
+      background: #fff;
+      padding: 50px;
+      border-radius: 8px;
+      max-width: 800px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    }
+
+    /* What I Do Section */
+    .services-flex { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
+    .services-graphic {
+      flex: 1; min-width: 300px; height: 400px;
+      background: #eee; border-radius: 15px; overflow: hidden;
+    }
+    .services-graphic img { width: 100%; height: 100%; object-fit: cover; }
+    .services-text { flex: 1; min-width: 300px; }
+    .services-text ul { list-style: none; }
+    .services-text li { font-size: 1.2rem; padding: 15px 0; border-bottom: 1px solid #eee; }
+
+    /* Split Grid Layout (Education/Skills & Languages/Contact) */
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      background: #fafafa;
+      padding: 80px 10%;
+    }
+    .info-block h2 { font-size: 1.8rem; border-bottom: 3px solid #000; display: inline-block; padding-bottom: 5px; margin-bottom: 25px; }
+    .info-block ul { list-style: none; }
+    .info-block li, .info-block p { font-size: 1.2rem; margin-bottom: 15px; }
+
+    /* Projects Section */
+    .project-section { text-align: center; padding: 80px 10%; }
+    .project-item { margin-bottom: 100px; }
+    .project-img-container {
+      width: 100%; max-width: 1000px; margin: 20px auto;
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    }
+    .project-img-container img { width: 100%; display: block; }
+
+    /* Graphics 3x2 Grid */
+    .graphics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+    .grid-box { aspect-ratio: 1 / 1; background: #eee; border-radius: 8px; overflow: hidden; }
+    .grid-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+    .grid-box:hover img { transform: scale(1.05); }
+
+    /* Footer */
+    footer { text-align: center; padding: 40px; background: #7c9dd2; color: #fff; }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .split-grid { grid-template-columns: 1fr; text-align: center; }
+      .services-flex { flex-direction: column; }
+      .graphics-grid { grid-template-columns: repeat(2, 1fr); }
+      .profile-pic { width: 240px; height: 240px; }
+      header h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero-content">
+    <img src="C:\Users\Admin\Desktop\PORTFOLIO\images\WhatsApp Image 2026-03-16 at 12.09.26.jpeg" alt="Vaino Hileni" class="profile-pic">
+    <h1>Hileni Vaino</h1>
+    <p class="hero-title">Graphic Designer </p>
+  </div>
+</header>
+
+<section class="about-section">
+  <div class="about-container">
+    <h2>ABOUT ME</h2>
+    <p>I am a passionate graphic designer who loves turning ideas into visually engaging 
+experiences . My work focuses on clear communication, thoughtful aesthetics, and 
+creative problem-solving, combining color, typography, and layout to tell meaningful 
+and impactful stories. I believe that good design goes beyond appearance it should 
+communicate, evoke emotion, and create a lasting impression.,</p>
+
+<p>>I enjoy exploring a wide range of styles, from playful and expressive to clean and 
+minimal, allowing me to adapt to different concepts and audiences. This flexibility 
+helps me approach each project with a fresh perspective, ensuring that every design 
+feels unique and intentional. I am constantly seeking new inspiration, learning new 
+techniques, and refining my skills to stay creative and relevant in a fast-evolving 
+design world.</p>
+
+
+  </div>
+</section>
+
+<section class="services">
+  <div class="services-flex">
+    <div class="services-graphic">
+      <img src="C:\Users\Admin\Desktop\PORTFOLIO\images\Screenshot 2026-03-25 181253.png" alt="Design Sample">
+    </div>
+    <div class="services-text">
+      <h2>WHAT I DO</h2>
+      <ul>
+        <li>Logo Design</li>
+        <li>Poster Design</li>
+        <li>Social Media Content</li>
+        <li>Business Card Design</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="split-grid">
+  <div class="info-block">
+    <h2>EDUCATION</h2>
+    <ul>
+      <li><strong>College of the Arts</strong><br>New Media Design</li>
+      <li><strong>Immanuel Shifidi High School</strong><br>Grade 11</li>
+    </ul>
+  </div>
+  <div class="info-block">
+    <h2>SKILLS</h2>
+    <ul>
+      <li>✓ Communication & Creativity</li>
+      <li>✓ Problem Solving</li>
+      <li>✓ Adobe Creative Suite</li>
+      <li>✓ Photography & Branding</li>
+    </ul>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>SELECTED PROJECTS</h2>
+
+  <div class="project-item">
+    <h3>Album Design</h3>
+    <div class="project-img-container">
+      <img src= "C:\Users\Admin\Desktop\PORTFOLIO\images\Untitled-1.jpg"alt="Album Project">
+    </div>
+  </div>
+
+  <div class="project-item">
+    <h3>Branding Project</h3>
+    <div class="project-img-container">
+      <img src="C:\Users\Admin\Desktop\PORTFOLIO\images\Untitled-2.jpg" alt="Branding Project">
+    </div>
+  </div>
+
+  <div class="project-item">
+    <h3>Graphics</h3>
+    <div class="graphics-grid">
+      <div class="grid-box"><img src="C:\Users\Admin\Desktop\PORTFOLIO\images\Untitled-3.jpg" alt="G1"></div>
+      <div class="grid-box"><img src="C:\Users\Admin\Desktop\PORTFOLIO\images\Untitled-4.jpg" alt="G2"></div>
+      <div class="grid-box"><img src="C:\Users\Admin\Desktop\PORTFOLIO\images\Untitled-5.jpg" alt="G3"></div>
+      <div class="grid-box"><img src="C:\Users\Admin\Desktop\PORTFOLIO\images\Untitled-7.jpg" alt="G4"></div>
+      <div class="grid-box"><img src="C:\Users\Admin\Desktop\PORTFOLIO\images\Untitled-6.jpg" alt="G5"></div>
+      <div class="grid-box"><img src="C:\Users\Admin\Desktop\PORTFOLIO\images\Untitled-8.jpg" alt="G6"></div>
+    </div>
+  </div>
+</section>
+
+<section class="split-grid" style="background-color: #fff; border-top: 1px solid #eee;">
+  <div class="info-block">
+    <h2>LANGUAGES</h2>
+    <ul>
+      <li>English</li>
+      <li>Afrikaans</li>
+      <li>Damara/Nama</li>
+    </ul>
+  </div>
+  <div class="info-block">
+    <h2>CONTACT</h2>
+    <p><strong>Email:</strong> vainohileni1@gmail.com</p>
+    <p><strong>Phone:</strong> 081 123 4567</p>
+    <p><strong>Instagram:</strong> @graphics_by_leni</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 HILENI VAINO</p>
+</footer>
+
+</body>
+</html>
